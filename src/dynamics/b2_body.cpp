@@ -24,6 +24,7 @@
 #include "box2d/b2_contact.h"
 #include "box2d/b2_fixture.h"
 #include "box2d/b2_joint.h"
+#include <stdio.h>
 #include "box2d/b2_world.h"
 
 #include <new>
@@ -351,6 +352,8 @@ void b2Body::ResetMassData()
 
 	// Update center of mass velocity.
 	m_linearVelocity += b2Cross(m_angularVelocity, m_sweep.c - oldCenter);
+
+
 }
 
 void b2Body::SetMassData(const b2MassData* massData)
@@ -392,6 +395,7 @@ void b2Body::SetMassData(const b2MassData* massData)
 
 	// Update center of mass velocity.
 	m_linearVelocity += b2Cross(m_angularVelocity, m_sweep.c - oldCenter);
+
 }
 
 bool b2Body::ShouldCollide(const b2Body* other) const

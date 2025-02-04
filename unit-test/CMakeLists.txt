@@ -12,6 +12,8 @@ set_target_properties(unit_test PROPERTIES
     CXX_STANDARD_REQUIRED YES
     CXX_EXTENSIONS NO
 )
+set(CMAKE_BUILD_TYPE "Debug")
+
 target_link_libraries(unit_test PUBLIC box2d)
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES doctest.h

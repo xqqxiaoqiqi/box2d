@@ -38,7 +38,7 @@
 
 #define	b2_maxFloat		FLT_MAX
 #define	b2_epsilon		FLT_EPSILON
-#define b2_pi			3.14159265359f
+#define b2_pi			3.1415927f
 
 /// @file
 /// Global tuning constants based on meters-kilograms-seconds (MKS) units.

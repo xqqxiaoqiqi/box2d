@@ -170,8 +170,7 @@ public:
 	/// @return the world position of the body's origin.
 	const b2Vec2& GetPosition() const;
 
-	/// Get the angle in radians.
-	/// @return the current world rotation angle in radians.
+
 	float GetAngle() const;
 
 	/// Get the world position of the center of mass.

@@ -23,6 +23,8 @@
 #ifndef B2_ISLAND_H
 #define B2_ISLAND_H
 
+#include <cstdio>
+
 #include "box2d/b2_body.h"
 #include "box2d/b2_math.h"
 #include "box2d/b2_time_step.h"
